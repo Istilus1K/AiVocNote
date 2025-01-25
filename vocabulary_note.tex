@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dictionary
+% LaTeX Template
+% Version 1.0 (20/12/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Vel (vel@latextemplates.com) inspired by a template by Marc Lavaud
+% Modified by:
+% Natsuko Nakagawa
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !TEX program = xelatex
+\documentclass[a4paper,xelatex,ja=standard, enablejfam=true, jbase=8pt, nomag]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             PACKAGES                         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Document margins and spacings
+\usepackage[margin=1.5cm,columnsep=5pt]{geometry}
+
+% Japanese font
+\usepackage{fontspec}
+\usepackage{zxjatype}
+\usepackage[ipaex]{zxjafont}
+\defaultfontfeatures{Ligatures=TeX}
+
+% 日本語フォントを指定
+%\setmainfont{ZenMaruGothic-Regular.ttf}
+
+% 英語フォントを指定
+%\newfontfamily\englishfont{Inconsolata-Regular.ttf}
+
+\setmainfont{Arial}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+
+% IPA font
+\newfontfamily\ipafont{CharisSIL-Regular.ttf}
+\newcommand\ipa[1]{{\ipafont #1}}
+
+% Index
+\usepackage{imakeidx}
+\makeindex[columns=3, title=逆引き, intoc]
+
+% Multiple columns
+\usepackage{multicol}
+
+\usepackage{stix,indentfirst}
+
+% Headers & footers
+\usepackage[twoside]{fancyhdr}  %警告用
+\usepackage{fancyhdr} % Required for modifying headers and footers
+\fancyhead[LE]{} % Top left header, even page
+\fancyhead[RO]{} % Top right header, odd page
+\fancyhead[LO]{} % Top left header, odd page
+\fancyhead[RE]{} % Top right header, even page
+\renewcommand{\headrulewidth}{1.4pt} % Rule under the header
+\fancyfoot[C]{{\thepage}} % Bottom center footer
+\pagestyle{fancy} % Use the custom headers and footers throughout the document
+
+\usepackage{xeCJK}
+
+
+% 行間の調整
+\renewcommand{\baselinestretch}{1.4}
+\renewcommand{\arraystretch}{0.9}
+
+% その他パッケージ
+\usepackage{fancybox}
+
+% web例文マーク
+\newcommand{\webreibun}{\ovalbox{\small e.g.}}
+
+% 例文マーク
+\newcommand{\reibun}{\ovalbox{\small memo}}
+
+
+
+% 辞書エントリの定義
+\newcommand{\entry}[5]{%
+\subsection*{\LARGE #1}%
+\ifx\relax#2\relax\else\noindent\textbf{\ignorespaces #2}\par\fi
+\noindent #3\par
+%\columnbreak
+\ifx\relax#4\relax\else\noindent #4\par\fi% 例文があれば表示
+\ifx\relax#5\relax\else\noindent #5\par\fi% 例文があれば表示
+%\columnbreak
+\markboth{#1}{#1}%
+}
+% \entry{単語}{発音}{意味}{web例文}{例文}
+
+
+\newcommand{\ctd}[2]{\hspace{0.5cm}{#1}{#2}}
+% \ctd{記述}{例文}
+
+% Title, author(s), & date
+\title{\Huge \bf Vocabulary Note}
+\author{\huge \bf February 2024}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             辞書本体部分                     %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% エクセルテンプレート貼り付け開始     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\section*{section1}
+
+%section1
+
+\newpage
+
+
+
+
+
+
+\section*{section2}
+
+%section2
+
+\newpage
+
+
+
+
+
+
+\section*{section3}
+
+%section3
+
+\newpage
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% エクセルテンプレート貼り付け終わり   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\printindex
+
+
+
+\end{document}
