@@ -35,7 +35,7 @@ def fetch_word_data(language, word):
                 "もし情報が見つからない場合や不完全な場合は、次のように回答してください：\n"
                 "- 結果が見つかりませんでした。\n"
                 "- 情報が不足しています（カンマ区切りの形式で返す）"
-                "(例：hati,/ˈɑːti/,心,Hati saya senang,私の心は喜んでいる,Dia adalah orang yang baik hati,彼/彼女は心優しい人です,Hati-hati!,気を付けて!)\n"
+                "(例：hati,/hati/,心,Hati saya senang,私の心は喜んでいる,Dia adalah orang yang baik hati,彼/彼女は心優しい人です,Hati-hati!,気を付けて!)\n"
                 "カンマを忘れないこと、必ず9つの項目を返すことに注意して下さい。\n")
 
 
