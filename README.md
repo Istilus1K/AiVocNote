@@ -28,7 +28,21 @@
    pip install gemini
    ```
 
-2. pythonファイル内の設定箇所を変更します。
+2. GEMINI_API_KEY環境変数を設定します：
+
+   APIキーの取得: Gemini API からAPIキーを取得してください。
+   環境変数の設定:
+   Windowsの場合:
+   ```bash
+   set GEMINI_API_KEY=your_api_key_here
+   ```
+   macOS/Linuxの場合:
+   ```bash
+   export GEMINI_API_KEY=your_api_key_here
+   ```
+   your_api_key_here は、実際に取得したAPIキーに置き換えてください。
+
+3. pythonファイル内の設定箇所を変更します。
 
    ```python
    #####################################################################
@@ -43,7 +57,7 @@
    - `language`: 学習する言語を指定します。
    - `output_directory`: PDFファイルの保存先を指定します。
 
-3. スクリプトを実行します。
+4. スクリプトを実行します。
    ```bash
    python AiVocNote.py
    ```
